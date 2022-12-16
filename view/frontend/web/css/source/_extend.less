@@ -1,0 +1,87 @@
+.products-grid{
+    .product-item-info {
+        position: relative;
+        .risecommerce-product-label {
+            top: 0px;
+            right: 0px;
+            padding: 10px 25px;
+            word-wrap: break-word;
+        }
+        .risecommerce-product-label.rectangle {
+            position: absolute;
+            z-index: 2;
+        }
+        .risecommerce-product-label.oval {
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+        }
+        .risecommerce-product-label-image {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+            width: 60px;
+        }
+        &:hover {
+            .risecommerce-product-label {
+                top: 9px;
+                right: 9px;
+            }
+            .risecommerce-product-label-image {
+                top: 9px;
+                right: 9px;
+            }
+        }
+    }
+}
+.product.media {
+    position: relative;
+    .risecommerce-product-label {
+        top: 0px;
+        right: 0px;
+        padding: 10px 25px;
+        word-wrap: break-word
+    }
+    .risecommerce-product-label-image {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        width: 80px;
+    }
+    .risecommerce-product-label.rectangle {
+        position: absolute;
+        z-index: 2;
+    }
+    .risecommerce-product-label.oval {
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .products-grid{
+        .product-item-info {
+            .risecommerce-product-label {
+                padding: 3px 15px;
+            }
+            .risecommerce-product-label-image {
+                width: 50px;
+            }
+        }
+    }
+    .product.media {
+        .risecommerce-product-label {
+            padding: 3px 15px;
+        }
+        .risecommerce-product-label-image {
+            width: 50px;
+        }
+    }
+}
