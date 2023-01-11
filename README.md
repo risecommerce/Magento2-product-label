@@ -19,6 +19,7 @@ Method II)
 Using Composer
 
 composer require risecommerce/magento-2-product-label-extension:1.0.1
+
 #Enable Extension:
 - php bin/magento module:enable Risecommerce_ProductLabel
 - php bin/magento setup:upgrade
